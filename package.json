@@ -1,0 +1,31 @@
+{
+  "name": "mr-symbol-manager",
+  "version": "0.1.0",
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "skpm": {
+    "name": "mr-symbol-manager",
+    "manifest": "src/manifest.json",
+    "main": "plugin.sketchplugin"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.3.0",
+    "@skpm/extract-loader": "^1.0.1",
+    "css-loader": "^0.28.7",
+    "html-loader": "^0.5.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "sketch-module-web-view": "^0.2.6"
+  },
+  "resources": [
+    "resources/**/*.js"
+  ]
+}

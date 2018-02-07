@@ -1,0 +1,17 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "Open Symbol Manager",
+      "identifier": "manage-symbols",
+      "script": "./mr-symbol.js"
+    }
+  ],
+  "menu": {
+    "title": "Mr Symbol Manager",
+    "items": [
+      "manage-symbols"
+    ]
+  }
+}
